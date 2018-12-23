@@ -2056,35 +2056,42 @@ p.comment-form-author { margin-right: 5%; }
 
 
 .credits { 
-	padding: 60px 0; 
-	position: relative;
-	z-index: 2;
+    padding: 60px 0;
+/*     	position: relative; */
+    position: absolute;
+    /*←絶対位置*/
+    bottom: 0;
+    /*下に固定*/
+    z-index: 2;
+		margin-top: auto;
+		width:100%;
 }
 
 .credits p {
+	width:100%;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 .credits p:first-child {
-	color: #fff;
-	font-size: 1.175em;
-	font-weight: 600;
+	color: #727070;
+	font-size:0.1em;
+	font-weight: 300;
 	letter-spacing: 0.025em;
 }
 
-.credits p:first-child a { color: #fff; }
-.credits p:first-child a:hover { color: #3bc492; }
+.credits p:first-child a { color: #727070;}
+.credits p:first-child a:hover { color: #727070;}
 
 .credits p + p {
-	color: #666;
-	font-size: 0.825em;
-	font-weight: 500;
-	margin-top: 12px;
+    color: #727070;
+    font-size: 0.1em;
+    font-weight: 600;
+    letter-spacing: 0.025em;
 }
 
 .credits p + p a { 
-	color: #666; 
+    color: #727070;
 }
 
 .credits p + p a:hover {
